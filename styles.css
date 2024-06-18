@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background: linear-gradient(45deg, #13547a, #80d0c7);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 10rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+h2 {
+  padding: 1rem 0 2rem;
+  font-size: 3rem;
+  background: linear-gradient(45deg, #13547a, #80d0c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+blockquote {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+}
+
+p {
+  float: right;
+  font-size: 1.5rem;
+  font-style: italic;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+p::before{
+    content: "";
+    width: 30px;
+position: absolute;
+    right: 100%;
+    align-items: center;
+    height: 2.5px;
+    background-color: #80d0c7;
+}
+
+.button {
+    padding: 4rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button img {
+    padding: .5rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px black;
+    margin: 2px;
+    height: 45px;
+    transition: 1s;
+}
+
+.button img:hover {
+    padding: .3rem;
+}
+
+button {
+    padding: 1rem 1.5rem;
+    background: linear-gradient(45deg,#13547a,#80d0c7);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: white;   
+}
+
+button:hover {
+    background: linear-gradient(45deg,#66aed7,#4b948c);
+
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        margin: 3rem 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+blockquote {
+    font-size: 2rem;
+}
+
+    p {
+        margin: 4rem 0;
+        font-size: 1.5rem;
+    }
+     
+    .button {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 7rem auto 0;
+    }
+
+    .button div {
+        display: flex;
+        margin: 1rem auto;
+    }
+
+    .button img {
+        margin: .5rem;
+    }
+}
